@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PhotoRuffle>
+
+<!-- NOTE: all the paths must be relative to the swf path --> 
+<GlobalOptions
+	maxWidth='0'
+	maxHeight='0'
+	flickrAPIKey=''
+	
+	path_images='assets/images'	
+	path_thumbs='assets/images/thumbs'
+	path_download='assets/download'
+	path_backgrounds='assets/backgrounds'
+	path_audio='assets/audio'
+/>
+
+<Audio url='Knorr.mp3' autoPlay='true'/>
+
+<Interface playSoundEffects='true' scrollMode='handle' keyboardInteraction='true'>
+	<ruffle tooltip='RUFFLE MODE'/>
+	<ordered tooltip='ORDERED MODE'/>
+	<fullscreen tooltip='FULLSCREEN TOGGLE'/>
+	<nextPrevArrows/>
+	<audioToggle/>
+	<breadcrumbs/>
+	<download tooltip='DOWNLOAD' tooltipPackage='DOWNLOAD ALL THE PHOTOS'/>
+	<home tooltip='HOME' url='All Photos' target='_blank'/>
+	<galleriesMenu tooltipOpen='PHOTOS' tooltipClose='CLOSE' maxHeight='288' autoClose='true' showThumbs='true' showTotalPhotos='true' alwaysStartAtLevel0='false' orderAlphabetically='false'/>
+	<title autoTitle='true' color='FFFFFF' shadow='true' textSize="19"/>
+	<slideshow tooltipPlay='START SLIDESHOW' tooltipPause='PAUSE SLIDESHOW' time='4' autoPlay='true'/>
+	<background url='kitchen_table.jpg' mode='repeat' fullscreenUrl='kitchen_table.jpg' fullscreenMode='repeat'/>
+	<logo url='logo.png' position='bottom right'/>
+	<layerBehindPhoto color='000000' transparency='60' blurPhotosBelow='true'/>
+</Interface>
+	
+<GalleriesOptions defaultMode='ruffle' firstGallery='All Photos'/>
+
+<PhotosOptions
+	closeByButton='false' 
+	enableDownload='false'
+	polaroidMode='false'
+	polaroidCaptionBehind='true'
+	polaroidOnlyThumbs='false'
+	flickrSize='medium'
+	borderSize='3'
+	borderColor='FFFFFF'
+	borderCornerRadius='0'
+/>
+
+<ThumbsOptions
+	maxWidth='200'
+	maxHeight='150'
+	spacingWhenOrdered='10'
+	forceSquare='false'
+	maxRuffleAreaWidth='900'
+	maxRuffleAreaHeight='800'
+	highlightOnMouseOver='true'
+/>
+
+<CaptionsOptions
+	startHidden='false'
+	backgroundColor='000000'
+	backgroundTransparency='80'
+	useEmbeddedFonts='true'
+	font='Myriad Web'
+	textAlign='center'
+	textSize='19'
+	lineSpacing='2'
+	textColor='FFFFFF'
+	linksColor='998800'
+	textShadow='true'
+/>
+</PhotoRuffle>
